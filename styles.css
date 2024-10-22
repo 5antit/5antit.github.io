@@ -1,10 +1,9 @@
-/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Texto en blanco para contrastar con el fondo oscuro */
-    background-color: #1f1f1f; /* Fondo oscuro por defecto */
+    color: #fff;
+    background-color: #1f1f1f;
 }
 
 .video-background {
@@ -37,22 +36,21 @@ header {
     margin: 0 auto;
 }
 
-/* Secciones con colores */
 #about {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 60px 0;
     text-align: center;
     color: #f0f0f0;
 }
 
 #projects {
-    background-color: #333;
+    background-color: #616161c4;
     padding: 60px 0;
     text-align: center;
 }
 
 #contact {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro semitransparente */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 60px 0;
     text-align: center;
 }
@@ -64,7 +62,6 @@ footer {
     text-align: center;
 }
 
-/* Estilos para animaciones e íconos */
 #contact i {
     margin: 0 10px;
     color: #fff;
@@ -72,15 +69,87 @@ footer {
 }
 
 #contact i:hover {
-    color: #0077b5; /* Color para LinkedIn */
+    color: #0077b5;
     transform: scale(1.2);
 }
 
 #contact a:nth-child(2) i:hover {
-    color: #fff; /* Color para GitHub */
+    color: #fff;
 }
 
-/* Hover para los proyectos */
 #projects img:hover {
     transform: scale(1.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project-info h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.project-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 50px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #projects .container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    #about, #contact {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    #about, #contact {
+        padding: 20px 0;
+    }
 }
