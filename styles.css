@@ -26,6 +26,7 @@ video {
 }
 
 header {
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -37,7 +38,7 @@ header {
 }
 
 #about {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 60px 0;
     text-align: center;
     color: #f0f0f0;
